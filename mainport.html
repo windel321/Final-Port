@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Final Portfolio</title>
+    <style>
+        body {
+            background: linear-gradient(135deg, #f0f4f8, #c2c9d6);
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #ffffff;
+            border-radius: 10px;
+            box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+        }
+
+        header {
+            background: linear-gradient(135deg, #333333, #000000);
+            color: #fff;
+            text-align: center;
+            padding: 20px;
+            border-radius: 10px 10px 0 0;
+            box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+        }
+
+        footer {
+            background: linear-gradient(135deg, #000000, #333333);
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
+            border-radius: 0 0 10px 10px;
+            box-shadow: 0px -5px 10px rgba(0, 0, 0, 0.2);
+        }
+
+        section {
+            opacity: 0;
+            background-color: #fff;
+            border: 1px solid #ccc;
+            border-radius: 10px;
+            margin-bottom: 20px;
+            padding: 20px;
+            transition: opacity 0.5s ease-in-out;
+            box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h1,
+        h2,
+        p {
+            margin: 0;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>My Final Portfolio</h1>
+    </header>
+
+    <div class="container">
+        <section class="about">
+            <h2>About Me</h2>
+            <p>Hello, my name is Windel Garoy I am 20 years old and I'm from Baguio City, Benguet.</p>
+        </section>
+
+        <section class="education">
+            <h2>Education</h2>
+            <p>I study at University of the Cordillera and my Course is IT major in Network Security</p>
+        </section>
+
+        <section class="experience">
+            <h2>Experience</h2>
+            <p>My current experience for now is Learning how to configure router and ports or how to link them via code or using modems.</p>
+        </section>
+
+        <section class="skills">
+            <h2>Skills</h2>
+            <ul>
+                <li>Proficient in router configuration and port management</li>
+                <li>Skilled in establishing connections through coding or modem setups</li>
+                <li>Knowledgeable in optimizing network performance</li>
+                <li>Experienced in ensuring seamless communication between devices</li>
+            </ul>
+        </section>
+
+        <section class="contact">
+            <h2>Contact Information</h2>
+            <p>Phone number: 09155397919<br>Email: kolefabs1@gmail.com</p>
+        </section>
+    </div>
+
+    <footer>
+        &copy; 2024 My Portfolio
+    </footer>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const sections = document.querySelectorAll('section');
+
+            sections.forEach((section, index) => {
+                setTimeout(() => {
+                    section.style.opacity = 1;
+                }, index * 500);
+            });
+        });
+    </script>
+</body>
+
+</html>
